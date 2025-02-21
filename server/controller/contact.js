@@ -37,6 +37,16 @@ const contactFunction = {
         }
   },
 
+  contactDetByUser : (req, res, next)=>{
+     try {
+
+         
+        
+     } catch (error) {
+        res.status(500).send({ status: 500, message: error })
+     }
+  },
+
   userDetWithContacts : (req, res, next)=>{
     try {
         const {userId} = req.query
